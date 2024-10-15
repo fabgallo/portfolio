@@ -60,7 +60,7 @@ const AboutSection = () => {
             <HiOutlineFire size={50} />
           </div>
           <div>
-            <h2 className="text-3xl font-bold">20+</h2>
+            <h2 className="text-3xl font-bold">200+</h2>
             <p className="mt-1">Projects Completed</p>
           </div>
         </div>
@@ -69,8 +69,8 @@ const AboutSection = () => {
             <FiCoffee size={50} />
           </div>
           <div>
-            <h2 className="text-3xl font-bold">30+</h2>
-            <p className="mt-1">Cup of Coffee</p>
+            <h2 className="text-3xl font-bold">&infin;</h2>
+            <p className="mt-1">Cups of Coffee</p>
           </div>
         </div>
 
@@ -89,7 +89,7 @@ const AboutSection = () => {
             <HiOutlineChartBar size={50} />
           </div>
           <div>
-            <h2 className="text-3xl font-bold">5+</h2>
+            <h2 className="text-3xl font-bold">20+</h2>
             <p className="mt-1">Years of experience</p>
           </div>
         </div>

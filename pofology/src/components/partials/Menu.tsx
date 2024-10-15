@@ -8,6 +8,7 @@ import { BsMoonStars, BsSun } from 'react-icons/bs';
 import { HiMenuAlt3 } from 'react-icons/hi';
 
 const Menu = () => {
+  const appName = process.env.NEXT_PUBLIC_APP_NAME
   const router = useRouter();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
@@ -16,7 +17,7 @@ const Menu = () => {
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4 md:px-6">
         <Link href="/">
           <a className="text-3xl  font-bold">
-            <span>Pofology</span>
+            <span>{appName}</span>
             <span className="text-primary-500">.</span>
           </a>
         </Link>
@@ -35,7 +36,7 @@ const Menu = () => {
               </a>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/blog">
               <a
                 className={classNames(
@@ -48,7 +49,7 @@ const Menu = () => {
                 Blog
               </a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/contact">
               <a
@@ -127,7 +128,7 @@ const Menu = () => {
                 <div className="border-b px-2 pb-4 dark:border-gray-700">
                   <Link href="/">
                     <a className="text-3xl  font-bold">
-                      <span>Pofology</span>
+                      <span>{appName}</span>
                       <span className="text-primary-500">.</span>
                     </a>
                   </Link>
@@ -143,7 +144,7 @@ const Menu = () => {
                       Works
                     </a>
                   </Link>
-                  <Link href="/blog">
+                  {/* <Link href="/blog">
                     <a
                       className={classNames(
                         { 'text-primary-500': router.asPath == '/blog' },
@@ -152,7 +153,7 @@ const Menu = () => {
                     >
                       Blog
                     </a>
-                  </Link>
+                  </Link> */}
                   <Link href="/contact">
                     <a
                       className={classNames(
