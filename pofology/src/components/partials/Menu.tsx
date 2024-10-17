@@ -36,30 +36,9 @@ const Menu = () => {
               </a>
             </Link>
           </li>
-          {/* <li>
-            <Link href="/blog">
-              <a
-                className={classNames(
-                  'inline-block px-4 font-semibold  transition-colors duration-150 hover:text-primary-600 hover:underline',
-                  {
-                    'text-primary-500': router.asPath == '/blog',
-                  }
-                )}
-              >
-                Blog
-              </a>
-            </Link>
-          </li> */}
           <li>
-            <Link href="/contact">
-              <a
-                className={classNames(
-                  'inline-block px-4 font-semibold  transition-colors duration-150 hover:text-primary-600 hover:underline',
-                  {
-                    'text-primary-500': router.asPath == '/contact',
-                  }
-                )}
-              >
+            <Link href="/#contact">
+              <a className="inline-block px-4 font-semibold  transition-colors duration-300 hover:text-primary-600 hover:underline">
                 Contact
               </a>
             </Link>
@@ -144,26 +123,11 @@ const Menu = () => {
                       Works
                     </a>
                   </Link>
-                  {/* <Link href="/blog">
-                    <a
-                      className={classNames(
-                        { 'text-primary-500': router.asPath == '/blog' },
-                        'group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600'
-                      )}
-                    >
-                      Blog
-                    </a>
-                  </Link> */}
-                  <Link href="/contact">
-                    <a
-                      className={classNames(
-                        { 'text-primary-500': router.asPath == '/contact' },
-                        'group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600 '
-                      )}
-                    >
-                      Contact
-                    </a>
-                  </Link>
+                <Link href="/#contact">
+                  <a className="group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600">
+                    Contact
+                  </a>
+                </Link>
                 </nav>
               </div>
             </div>

@@ -23,32 +23,32 @@ const AboutSection = () => {
         <div className="grid grid-cols-2 gap-x-6 gap-y-4">
           <div className="">
             <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">Backend</h6>
-              <p>85%</p>
+              <h6 className="font-semibold">People management</h6>
+              <p>90%</p>
             </div>
-            <ProgressBar color="blue" progress={85} />
+            <ProgressBar color="rose" progress={90} />
           </div>
           <div className="">
             <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">Frontend</h6>
-              <p>95%</p>
+              <h6 className="font-semibold">Front-end</h6>
+              <p>90%</p>
             </div>
-            <ProgressBar color="amber" progress={95} />
+            <ProgressBar color="amber" progress={90} />
           </div>
 
           <div className="">
             <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">Mobile App</h6>
-              <p>75%</p>
+              <h6 className="font-semibold">UI/UX</h6>
+              <p>80%</p>
             </div>
-            <ProgressBar color="rose" progress={75} />
+            <ProgressBar color="green" progress={80} />
           </div>
           <div className="">
             <div className="mb-3 flex justify-between">
-              <h6 className="font-semibold">UI/UX</h6>
-              <p>90%</p>
+              <h6 className="font-semibold">Back-end</h6>
+              <p>50%</p>
             </div>
-            <ProgressBar color="green" progress={80} />
+            <ProgressBar color="blue" progress={50} />
           </div>
         </div>
       </div>
