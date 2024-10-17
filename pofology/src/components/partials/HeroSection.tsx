@@ -37,9 +37,7 @@ const HeroSection = () => {
             </a>
           </Link>
         </div>
-        <Link href="https://github.com/fabgallo">
-          <Button className="mt-5 px-8">Contact Me</Button>
-        </Link>
+        <Button as={Link} href="https://github.com/fabgallo" type="button" className="mt-5 px-8">Contact Me</Button>
       </div>
 
       <div className="absolute bottom-0 flex flex-col items-center ">
