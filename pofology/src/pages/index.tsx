@@ -1,5 +1,5 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import AboutSection from '@/components/partials/AboutSection';
-import BlogSection from '@/components/partials/BlogSection';
 import ContactSection from '@/components/partials/ContactSection';
 import ExperienceSection from '@/components/partials/ExperienceSection';
 import HeroSection from '@/components/partials/HeroSection';
@@ -15,6 +15,8 @@ import type { GetServerSideProps, NextPage } from 'next';
 // }
 
 const Home: NextPage = () => {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || '';
+
   return (
     <AppLayout title="Home">
       <HeroSection />
@@ -24,21 +26,19 @@ const Home: NextPage = () => {
       <section className="container py-16">
         <ExperienceSection />
       </section>
-      <section className="container py-16">
+      {/* <section className="container py-16">
         <ServiceSection />
       </section>
       <section className="container py-16">
         <RecentWorkSection />
-      </section>
+      </section> */}
       <section className="container py-16">
         <TestimonialSection />
       </section>
-      <section className="container py-16">
-        <BlogSection />
-      </section>
-      <section className="container py-16">
+      <section id='contact' className="container py-16">
         <ContactSection />
       </section>
+      <GoogleAnalytics gaId={gaId} />
     </AppLayout>
   );
 };

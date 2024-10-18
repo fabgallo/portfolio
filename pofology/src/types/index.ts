@@ -51,7 +51,7 @@ export type Post = {
 export type Review = {
   author: {
     name: string;
-    imageUrl: string;
+    imageUrl?: string;
     designation: string;
     company: string;
   };

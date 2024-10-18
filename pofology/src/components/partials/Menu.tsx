@@ -8,6 +8,7 @@ import { BsMoonStars, BsSun } from 'react-icons/bs';
 import { HiMenuAlt3 } from 'react-icons/hi';
 
 const Menu = () => {
+  const appName = process.env.NEXT_PUBLIC_APP_NAME
   const router = useRouter();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
@@ -16,7 +17,7 @@ const Menu = () => {
       <div className="mx-auto flex h-16 max-w-7xl items-center px-4 md:px-6">
         <Link href="/">
           <a className="text-3xl  font-bold">
-            <span>Pofology</span>
+            <span>{appName}</span>
             <span className="text-primary-500">.</span>
           </a>
         </Link>
@@ -36,29 +37,8 @@ const Menu = () => {
             </Link>
           </li>
           <li>
-            <Link href="/blog">
-              <a
-                className={classNames(
-                  'inline-block px-4 font-semibold  transition-colors duration-150 hover:text-primary-600 hover:underline',
-                  {
-                    'text-primary-500': router.asPath == '/blog',
-                  }
-                )}
-              >
-                Blog
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-              <a
-                className={classNames(
-                  'inline-block px-4 font-semibold  transition-colors duration-150 hover:text-primary-600 hover:underline',
-                  {
-                    'text-primary-500': router.asPath == '/contact',
-                  }
-                )}
-              >
+            <Link href="/#contact">
+              <a className="inline-block px-4 font-semibold  transition-colors duration-300 hover:text-primary-600 hover:underline">
                 Contact
               </a>
             </Link>
@@ -127,7 +107,7 @@ const Menu = () => {
                 <div className="border-b px-2 pb-4 dark:border-gray-700">
                   <Link href="/">
                     <a className="text-3xl  font-bold">
-                      <span>Pofology</span>
+                      <span>{appName}</span>
                       <span className="text-primary-500">.</span>
                     </a>
                   </Link>
@@ -143,26 +123,11 @@ const Menu = () => {
                       Works
                     </a>
                   </Link>
-                  <Link href="/blog">
-                    <a
-                      className={classNames(
-                        { 'text-primary-500': router.asPath == '/blog' },
-                        'group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600'
-                      )}
-                    >
-                      Blog
-                    </a>
-                  </Link>
-                  <Link href="/contact">
-                    <a
-                      className={classNames(
-                        { 'text-primary-500': router.asPath == '/contact' },
-                        'group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600 '
-                      )}
-                    >
-                      Contact
-                    </a>
-                  </Link>
+                <Link href="/#contact">
+                  <a className="group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600">
+                    Contact
+                  </a>
+                </Link>
                 </nav>
               </div>
             </div>
