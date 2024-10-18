@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import Button from '@/components/form/Button';
@@ -7,6 +8,8 @@ import HeroBackground from './HeroBackground';
 import Typed from 'react-typed';
 
 const HeroSection = () => {
+  const router = useRouter();
+
   return (
     <div className="hero relative -mt-16 flex items-center justify-center">
       <HeroBackground />
@@ -37,7 +40,7 @@ const HeroSection = () => {
             </a>
           </Link>
         </div>
-        <Button as={Link} href="https://github.com/fabgallo" type="button" className="mt-5 px-8">Contact Me</Button>
+        <Button onClick={() => router.push('/#contact')} type="button" className="mt-5 px-8">Contact Me</Button>
       </div>
 
       <div className="absolute bottom-0 flex flex-col items-center ">

@@ -1,4 +1,4 @@
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google';
 import AboutSection from '@/components/partials/AboutSection';
 import ContactSection from '@/components/partials/ContactSection';
 import ExperienceSection from '@/components/partials/ExperienceSection';
