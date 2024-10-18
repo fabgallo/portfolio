@@ -8,7 +8,7 @@ import { BsMoonStars, BsSun } from 'react-icons/bs';
 import { HiMenuAlt3 } from 'react-icons/hi';
 
 const Menu = () => {
-  const appName = process.env.NEXT_PUBLIC_APP_NAME
+  const appName = process.env.NEXT_PUBLIC_APP_NAME;
   const router = useRouter();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
@@ -22,7 +22,7 @@ const Menu = () => {
           </a>
         </Link>
         <ul className="ml-auto hidden items-center md:flex">
-          <li>
+          {/* <li>
             <Link href="/works">
               <a
                 className={classNames(
@@ -35,7 +35,7 @@ const Menu = () => {
                 Works
               </a>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link href="/#contact">
               <a className="inline-block px-4 font-semibold  transition-colors duration-300 hover:text-primary-600 hover:underline">
@@ -113,7 +113,7 @@ const Menu = () => {
                   </Link>
                 </div>
                 <nav className="mt-4 space-y-1 px-2">
-                  <Link href="/works">
+                  {/* <Link href="/works">
                     <a
                       className={classNames(
                         'group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600',
@@ -122,12 +122,12 @@ const Menu = () => {
                     >
                       Works
                     </a>
+                  </Link> */}
+                  <Link href="/#contact">
+                    <a className="group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600">
+                      Contact
+                    </a>
                   </Link>
-                <Link href="/#contact">
-                  <a className="group flex items-center px-2 py-2 text-base font-medium transition-colors duration-150 hover:text-primary-600">
-                    Contact
-                  </a>
-                </Link>
                 </nav>
               </div>
             </div>
