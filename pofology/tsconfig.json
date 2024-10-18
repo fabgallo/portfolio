@@ -30,8 +30,5 @@
     "**/*.ts",
     "**/*.tsx"
   ],
-  "exclude": [
-    "node_modules",
-    "portfolio"
-  ]
+  "exclude": ["node_modules"]
 }
