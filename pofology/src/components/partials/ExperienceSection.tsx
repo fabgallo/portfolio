@@ -2,9 +2,10 @@ import { educations } from '@/data/educations';
 import { experiences } from '@/data/experiences';
 import styles from '@/styles/modules/ExperienceSection.module.scss';
 import classNames from 'classnames';
-import { FiBriefcase } from 'react-icons/fi';
+import { FiBriefcase, FiLinkedin } from 'react-icons/fi';
 import AcademicCap from '@/components/icons/AcademicCap';
 import SectionTitle from '@/components/shared/SectionTitle';
+import Link from 'next/link';
 
 const ExperienceSection = () => {
   return (
@@ -61,6 +62,10 @@ const ExperienceSection = () => {
             </ol>
           </div>
         </div>
+      </div>
+      {/* More */}
+      <div className="pt-6">
+        <p className="text-base font-normal text-gray-500 dark:text-gray-200">For the complete list of my work experience, check my <Link href='https://linkedin.com/in/fabgallo'><a className="transition-colors duration-150 hover:text-primary-600 hover:underline"><FiLinkedin className="inline-block mt-[-5px]" /> LinkedIn</a></Link> profile.</p>
       </div>
     </>
   );
